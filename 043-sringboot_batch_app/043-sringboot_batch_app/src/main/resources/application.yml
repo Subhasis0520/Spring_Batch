@@ -1,0 +1,16 @@
+spring:
+  batch:
+    jdbc:
+      initialize-schema: ALWAYS
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Subhasis@123
+    url: jdbc:mysql://localhost:3306/batchdemo
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
